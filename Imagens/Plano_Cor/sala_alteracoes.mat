@@ -1,0 +1,17 @@
+# Created by Octave 3.8.2, Thu Feb 12 11:03:39 2015 BRT <uluyac@uluyac-linux-note>
+# name: inds_perms
+# type: lazy_index
+# name: index_value
+# type: matrix
+# rows: 1
+# columns: 7
+ 1 3 9 12 13 23 24
+
+
+
+
+# name: n_blocos
+# type: scalar
+24
+
+

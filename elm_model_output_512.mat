@@ -1,0 +1,15 @@
+# Created by Octave 3.8.2, Wed Feb 04 16:04:08 2015 BRT <uluyac@uluyac-linux-note>
+# name: output
+# type: matrix
+# rows: 1
+# columns: 74
+ 1 0 0 1 0 1 0 1 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 0 1 1 0 0 1 1 0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 0 1 0 0 0 1 0 0 1 1 0 1 0 0 0 1 1 0 0 1 0 0 0 1
+
+
+# name: targets
+# type: matrix
+# rows: 1
+# columns: 74
+ 1 0 0 1 0 1 0 1 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 1 1 1 0 1 1 0 0 1 1 0 1 0 1 1 0 0 1 0 1 1 0 1 1 1 1 0 0 1 0 0 0 1 0 0 1 1 1 1 0 0 0 1 1 0 0 1 0 0 0 1
+
+
