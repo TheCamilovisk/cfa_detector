@@ -14,22 +14,6 @@ function Im = demosaic_median(img)
 	Green_c = (img(:, :, 1) .- (M_r_g .* Red_m)) .+ (img(:, :, 3) .+ (M_g_b .* Blue_m)) .+ img(:, :, 2);
 	Blue_c = (img(:, :, 1) .- (M_r_b .* Red_m)) .+ (img(:, :, 2) .- (M_g_b .* Green_m)) .+ img(:, :, 3);
   
-  test = uint8((img(:, :, 1) .- (M_r_g .* Red_m)) .+ (img(:, :, 3) .+ (M_g_b .* Blue_m)) .+ img(:, :, 2));
-  #imshow(test);
-  imwrite(test, 'testOG.png');
-  test = uint8(img(:, :, 1));
-  #imshow(test);
-  imwrite(test, 'testOG2.png');
-  test = uint8(M_r_g);
-  #imshow(test);
-  imwrite(test, 'testOG3.png');
-  test = uint8(M_r_g .* Red_m);
-  #imshow(test);
-  imwrite(test, 'testOG3S.png');
-  test = uint8(img(:, :, 1) .- (M_r_b .* Red_m));
-  #imshow(test);
-  imwrite(test, 'testOG4.png');
-  
 	
 	Im(:, :, 1) = Red_c;
 	Im(:, :, 2) = Green_c;

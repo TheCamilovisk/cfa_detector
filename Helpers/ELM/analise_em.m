@@ -10,6 +10,9 @@ porcentagem_sel_treinamento = 0.8;
 
 ActivationFunction = "sig";
 
+n_neuronios_inicial = 1;
+n_neuronios_final = 100;
+n_neuronios_passo = 1;
 
 tipo_bloco = "512";
 switch t_bloco
@@ -26,10 +29,6 @@ endswitch
 
 arquivo_dados = cat(2, tipo_bloco, ".mat")
 load(arquivo_dados);
-
-n_neuronios_inicial = 1;
-n_neuronios_final = 100;
-n_neuronios_passo = 1;
 
 printf("Numero de neuronios inicial - %d\nNumero de neuronios final - %d\nPasso - %d\n", n_neuronios_inicial, n_neuronios_final, n_neuronios_passo);
 
