@@ -79,12 +79,15 @@ clear k;
 
 copyfile (cat(2, "elm_model_", tipo_bloco, ".mat"), "../../");
 
-figure('Position', [0, 0, 210, 90]); plot(x, m_a_treinamento);
+save(cat(2, "accuracy_train_", tipo_bloco, ".mat"), "m_a_treinamento");
+save(cat(2, "accuracy_test_", tipo_bloco, ".mat"), "m_a_teste");
+
+figure('Position', [0, 0, 210, 110]); plot(x, m_a_treinamento);
 title (cat(2, "Treinamento para blocos de ", tipo_bloco));
 xlabel ("Neuronios");
 ylabel ("Precisao");
 axis([5 n_neuronios_final min(m_a_treinamento(5:end))-0.01 1.01]);
-figure('Position', [0, 0, 210, 90]); plot(x, m_a_teste);
+figure('Position', [0, 0, 210, 110]); plot(x, m_a_teste);
 title (cat(2, "Testes para blocos de ", tipo_bloco));
 xlabel ("Neuronios");
 ylabel ("Precisao");
