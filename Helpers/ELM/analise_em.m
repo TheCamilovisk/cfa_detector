@@ -4,7 +4,7 @@ more off;
 clear;
 clc;
 
-t_bloco = 0;
+t_bloco = 1;
 n_itens_selec = 1;
 porcentagem_sel_treinamento = 0.8;
 
