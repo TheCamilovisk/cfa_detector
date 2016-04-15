@@ -4,12 +4,12 @@ more off;
 clear;
 clc;
 
-img_str = "arvore";
+img_str = "domino";
 extensao = ".tiff";
-pasta_str = "Bilinear";
+pasta_str = "Camera";
 digito = "2";
 
-tipo_bloco = 2;
+tipo_bloco = 1;
 nome_base = "512";
 tamanho_bloco = 512;
 if tipo_bloco == 2;

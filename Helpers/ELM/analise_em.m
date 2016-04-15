@@ -10,8 +10,8 @@ porcentagem_sel_treinamento = 0.8;
 
 ActivationFunction = "sig";
 
-n_neuronios_inicial = 1;
-n_neuronios_final = 100;
+n_neuronios_inicial = 59;
+n_neuronios_final = 60;
 n_neuronios_passo = 1;
 
 tipo_bloco = "512";
