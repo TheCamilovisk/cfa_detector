@@ -4,12 +4,12 @@ more off;
 clear;
 clc;
 
-img_str = "arvore";
+img_str = "domino";
 extensao = ".tiff";
-pasta_str = "Bilinear";
+pasta_str = "Camera";
 digito = "2";
 
-tipo_bloco = 2;
+tipo_bloco = 1;
 nome_base = "512";
 tamanho_bloco = 512;
 if tipo_bloco == 2;
@@ -62,6 +62,15 @@ while (~metricas_ok)
   endif
   
 endwhile
+
+resultados_raiz = cat(2, pwd(), "/Resultados/");
+if (exist(resultados_raiz) ~= 7)
+  [STATUS, MSG, MSGID] = mkdir (resultados_raiz);
+  if ~STATUS
+    MSG
+    MSGID
+  endif
+endif
 
 diretorio_resultados = cat(2, pwd(), "/Resultados/", img_str, "/");
 if (exist(diretorio_resultados) ~= 7)
