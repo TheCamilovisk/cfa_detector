@@ -63,6 +63,15 @@ while (~metricas_ok)
   
 endwhile
 
+resultados_raiz = cat(2, pwd(), "/Resultados/");
+if (exist(resultados_raiz) ~= 7)
+  [STATUS, MSG, MSGID] = mkdir (resultados_raiz);
+  if ~STATUS
+    MSG
+    MSGID
+  endif
+endif
+
 diretorio_resultados = cat(2, pwd(), "/Resultados/", img_str, "/");
 if (exist(diretorio_resultados) ~= 7)
   [STATUS, MSG, MSGID] = mkdir (diretorio_resultados);

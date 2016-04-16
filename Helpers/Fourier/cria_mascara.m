@@ -13,7 +13,7 @@ function Mascara = cria_mascara(tamanho_fft, raio, tipo = 1)
   for k = 1:size(Shifts, 1)
     Mascara_pontos(Shifts(k,1)+tamanho_fft/2+1,Shifts(k,2)+tamanho_fft/2+1) = 1;
   end
-  disco = strel('disk',raio);
+  disco = strel('disk',raio,0);
   Mascara = imdilate(Mascara_pontos,disco);
   Mascara = Mascara(1:tamanho_fft,1:tamanho_fft);
 endfunction
