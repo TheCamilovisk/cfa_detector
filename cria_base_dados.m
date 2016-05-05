@@ -4,13 +4,13 @@ more off;
 clear;
 clc;
 
-strs_img = {"garagem", "mesa", "monitor", "rua", "sala"}; % "garagem", "mesa", "monitor", "rua", "sala" // "casa", "passaro", "piao", "piaocaido", "telhado"
-tipos_interpolacao = {"Sem_Interpolacao", "Bilinear"}; % "Bilinear", "Bicubica", "Mediana", "Baseada_Gradiente", "Transicao_Saturacao", "Plano_Cor", "Borradas", "Testes", "Sem_Interpolacao"
-tipo_referencia = "Sem_Interpolacao"
+strs_img = {"casa", "passaro", "piao", "piaocaido", "telhado"}; % "garagem", "mesa", "monitor", "rua", "sala" // "casa", "passaro", "piao", "piaocaido", "telhado"
+tipos_interpolacao = {"Borradas", "Camera"}; % "Bilinear", "Bicubica", "Mediana", "Baseada_Gradiente", "Transicao_Saturacao", "Plano_Cor", "Borradas", "Testes", "Sem_Interpolacao"
+tipo_referencia = "Borradas"
 extensao = ".tiff";
 ref_existe = 0;
 
-tipo_bloco = 2;
+tipo_bloco = 1;
 nome_base = "512";
 if tipo_bloco == 2
   nome_base = "256";
